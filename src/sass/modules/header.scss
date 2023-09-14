@@ -1,0 +1,15 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding-top: 30px;
+ 
+    img{
+        height: 60%;
+        color: #ff6060;
+    }
+}

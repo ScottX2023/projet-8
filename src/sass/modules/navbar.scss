@@ -1,0 +1,17 @@
+.nav_list{
+    display: flex;
+    gap: 50px;
+    color: #ff6060;
+    font-size: clamp(12px, 2.5vw, 24px);
+    text-decoration: none;
+    &_item{
+        color: #ff6060;
+        text-decoration: none;
+        &_active{
+            position: relative;
+            color: #ff6060;
+            transition: all 0.2s ease-in-out;
+            text-decoration: underline solid #ff6060; 
+        }
+    }
+}
