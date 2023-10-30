@@ -1,0 +1,39 @@
+.banner,
+.banner_about {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  height: 223px;
+  max-width: 95%;
+  margin: 43px auto;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+
+  p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  & {
+    &_about {
+      background-image: url('../../assets/about.png');
+    }
+
+    &_home {
+      background-image: url('../../assets/home.png');
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 125px;
+    margin: 0 auto;
+    p {
+      font-size: 22px;
+    }
+  }
+}
