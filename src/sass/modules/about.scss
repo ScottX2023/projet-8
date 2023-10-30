@@ -1,0 +1,15 @@
+.about_main{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    &_collapse{
+        margin: 0;
+    }
+    
+    @media screen and (max-width: 768px) {
+        margin: 0 auto;
+      }
+}
