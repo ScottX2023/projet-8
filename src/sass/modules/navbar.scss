@@ -2,16 +2,34 @@
     display: flex;
     gap: 50px;
     color: #ff6060;
-    font-size: clamp(12px, 2.5vw, 24px);
-    text-decoration: none;
+    list-style: none;
+
     &_item{
         color: #ff6060;
         text-decoration: none;
+        font-size: 24px;
         &_active{
             position: relative;
             color: #ff6060;
+            font-size: 24px;
             transition: all 0.2s ease-in-out;
-            text-decoration: underline solid #ff6060; 
+            border-bottom: 2px solid #ff6060;
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+           }
         }
+    @media screen and (max-width: 768px) {
+         font-size: 16px;
     }
+    }
+
+    a {
+        text-decoration: none;
+    }
+    @media screen and (max-width: 768px) {
+        gap: 10px;
+        margin-top: 10px;
+        padding-right: 30px;
+
+      }
 }
