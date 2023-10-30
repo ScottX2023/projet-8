@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import '../sass/modules/navbar.scss'
 
 function Navbar() {
+    // utilisation du hook pour obtenir l'url actuel
     const location = useLocation();
   
     return (

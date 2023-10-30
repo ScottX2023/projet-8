@@ -1,0 +1,15 @@
+.accomodation_content_host_stars {
+    display: flex;
+    gap: 10px;
+  
+    img.accomodation_content_host_stars {
+      width: 30px;
+      height: 30px;
+    
+      @media screen and (max-width: 768px) {
+        width: 15px;
+        height: 15px;
+       }
+    }
+  }
+  

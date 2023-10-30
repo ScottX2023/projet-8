@@ -1,0 +1,85 @@
+.collapse{
+    max-width: 1100px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: auto;
+    &_title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FF6060;
+        color: #fff;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 20px;
+        padding: 15px 20px;
+        cursor: pointer;
+        position: relative;
+        z-index: 50;
+        @media screen and (max-width: 768px) {
+            font-size: 12px;
+            padding: 10px 15px;
+          }
+    }
+    &_content{
+        display: flex;
+        background-color: #F7F7F7;
+        flex-direction: column;
+        visibility: visible;
+        opacity: 1;
+        padding: 15px;
+        font-size: 12px;
+        color: #FF6060;
+        margin-top: -20px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        position: relative;
+        z-index: 49;
+        margin-bottom: 30px;
+        transition: visibility 0.5s ease-in-out,
+                    opacity 0.5s ease-in-out,
+                    height 0.2s ease-in-out;
+        @media screen and (max-width: 768px) {
+          margin-bottom: 0px;
+          font-size: 10px;
+        }
+    }
+    &_content_ul {
+        padding-left: 0;
+    }
+    &_content_hidden{
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        background-color: #fff;
+    }
+}
+
+.accomodation_collapse{
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    width: 95%;
+    margin: auto;
+    &_item{
+        width: 50%;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+          }
+    }
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 10px;
+      }
+}
+
+.arrow {
+    height: 15px;
+    width: 20px;
+    @media screen and (max-width: 768px) {
+        height: 10px;
+        width: 15px;
+      }
+}

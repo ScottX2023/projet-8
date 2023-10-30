@@ -6,7 +6,7 @@ import '../sass/modules/carrousel.scss'
 
 function Carrousel({ imageSlider }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-
+  // modification de la slide en fonction de l'index de l'image
   const changeSlide = (index) => {
     if (index < 0) {
       setCurrentIndex(imageSlider.length - 1); 
@@ -17,10 +17,12 @@ function Carrousel({ imageSlider }) {
     }
   };
 
+  // Affichage de l'image suivante 
   const nextSlide = () => {
     changeSlide(currentIndex + 1);
   };
 
+  //Affichage de l'image précédente 
   const prevSlide = () => {
     changeSlide(currentIndex - 1);
   };
