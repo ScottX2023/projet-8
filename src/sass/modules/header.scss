@@ -7,18 +7,21 @@
     max-width: 95%;
     margin: 0 auto;
     padding-top: 30px;
- 
+    
+
     img{
-        height: 80%;
-        width: 60%;
+        width: 80%;
         color: #ff6060;
-        @media screen and (max-width: 768px) {
-            height: fit-content;
-            width: 30%;
+        @media screen and (max-width: 767px) {
+            width: 70%;
        }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         padding-top: 10px;
+
+        h1 {
+            width: 60%;
+        }
       }
 }

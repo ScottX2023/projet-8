@@ -1,4 +1,4 @@
-import Logo from '../assets/logo.png';
+import Logo from '../assets/logo.svg';
 import '../sass/modules/header.scss';
 import Navbar from './Navbar';
 

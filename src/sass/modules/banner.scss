@@ -21,19 +21,30 @@
 
   & {
     &_about {
-      background-image: url('../../assets/about.png');
+      background-image: url('../../assets/about.svg');
     }
 
     &_home {
-      background-image: url('../../assets/home.png');
+      background-image: url('../../assets/home.svg');
     }
   }
 
-  @media screen and (max-width: 768px) {
+  .break {
+    display: none;
+  }
+
+  @media screen and (max-width: 767px) {
     height: 125px;
     margin: 0 auto;
+    justify-content: flex-start;
     p {
-      font-size: 22px;
+      font-size: 26px;
+      margin: 10px;
+      text-align: left;
+    }
+
+    .break {
+      display: flex;
     }
   }
 }

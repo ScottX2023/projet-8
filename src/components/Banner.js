@@ -13,7 +13,7 @@ function Banner() {
 
   return (
     <section className={`banner ${isAboutPage ? 'banner_about' : 'banner_home'}`}>
-      {!isAboutPage && <p>Chez vous, partout et ailleurs</p>}
+      {!isAboutPage && <p>Chez vous, <br className='break'/>partout et ailleurs</p>}
     </section>
   );
 }
